@@ -8,6 +8,10 @@ sends a transaction: it reads the chain and checks.
 |---|---|---|---|
 | [4meg](4meg/) | 2026-09-14 and 2026-09-17 | a 3,847,522 weight unit transaction carrying a 10 second video crossed two DOG Mode nodes in 4 seconds while Bitcoin Core refused it; before it, a 1 sat output did the same | `cd 4meg && python3 verify.py dog.mp4` |
 
+**[The kit](kit/)** is the tool that ran them: it sends what Bitcoin Core refuses through one DOG Mode node you name,
+reads it arriving in the others, and checks that a Core-policy node never sees it. It spends a little real bitcoin,
+so it proves everything offline first and dry runs until you add `--go`.
+
 The write up, with the video: https://seed.dogofbitcoin.org/4meg. The readings, where the DOG Mode maintainers read
 them: https://github.com/bitcoindogmode/bitcoin/pull/3#issuecomment-5722763923
 

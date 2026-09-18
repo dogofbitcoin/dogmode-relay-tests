@@ -1,0 +1,13 @@
+{
+  "nodes": [
+    {"name": "my full node", "cli": "bitcoin-cli -stdin {method}"},
+    {"name": "my umbrel", "umbrel": "umbrel@umbrel.local"},
+    {"name": "a friend's node", "cli": "ssh friend@their-node bitcoin-cli -stdin {method}"},
+    {"name": "docker", "cli": "docker exec -i dogmode bitcoin-cli -stdin {method}"}
+  ],
+  "api": "https://mempool.space/api",
+  "key_file": "~/.dogmode-relaytest/key",
+  "state_file": "~/.dogmode-relaytest/state.json",
+  "record_dir": null,
+  "out_dir": "."
+}
